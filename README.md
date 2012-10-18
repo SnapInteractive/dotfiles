@@ -1,5 +1,5 @@
 ﻿
-# weikinhuang's dotfiles
+# SnapInteractive's dotfiles
 
 ## Installation
 
@@ -12,7 +12,7 @@ The bootstrapper script will create symlinks in the home directory to the proper
 When the git repo is updated, the files will be automatically updated when the session is restarted.
 
 ```bash
-cd; git clone https://github.com/weikinhuang/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh
+cd; git clone https://github.com/SnapInteractive/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh
 ```
 
 To update later on, just run `git pull` in `~/.dotfiles`.
@@ -22,7 +22,7 @@ To update later on, just run `git pull` in `~/.dotfiles`.
 To source these files, type:
 
 ```bash
-cd; mkdir ~/.dotfiles 2> /dev/null && curl -#L https://github.com/weikinhuang/dotfiles/tarball/master | tar -C ~/.dotfiles -xzv --strip-components 1 && cd ~/.dotfiles && ./bootstrap.sh
+cd; mkdir ~/.dotfiles 2> /dev/null && curl -#L https://github.com/SnapInteractive/dotfiles/tarball/master | tar -C ~/.dotfiles -xzv --strip-components 1 && cd ~/.dotfiles && ./bootstrap.sh
 ```
 
 To update later on, just run that command again, and will create backups to the current files with a *.bak extension.
@@ -32,19 +32,19 @@ To update later on, just run that command again, and will create backups to the 
 Including .gitconfig in the setup with the `--git` options in the bootstrap
 
 ```bash
-cd; git clone https://github.com/weikinhuang/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh --git
+cd; git clone https://github.com/SnapInteractive/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh --git
 ```
 
 Including .vim and .vimrc in the setup with the `--vim` options in the bootstrap
 
 ```bash
-cd; git clone https://github.com/weikinhuang/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh --vim
+cd; git clone https://github.com/SnapInteractive/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh --vim
 ```
 
 Including all options
 
 ```bash
-cd; git clone https://github.com/weikinhuang/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh --vim --git
+cd; git clone https://github.com/SnapInteractive/dotfiles.git .dotfiles && cd .dotfiles && ./bootstrap.sh --vim --git
 ```
 
 ### Add custom commands
